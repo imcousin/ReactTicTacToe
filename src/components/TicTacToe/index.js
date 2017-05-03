@@ -35,6 +35,7 @@ class TicTacToe extends Component {
   }
 
   handleClick(i) {
+    /*You may also want to update handleClick to be aware of stepNumber when reading the current board state so that you can go back in time then click in the board to create a new entry. (Hint: It's easiest to .slice() off the extra elements from history at the very top of handleClick.)*/
     const history = this.state.history;
     const current = history[history.length - 1];
     const squares = current.squares.slice();
