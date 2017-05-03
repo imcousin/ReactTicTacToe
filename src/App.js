@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
+import TicTacToe from './components/TicTacToe';
 import './App.css';
-import Game from './Components/Game';
 
 class App extends Component {
   render() {
@@ -11,7 +11,7 @@ class App extends Component {
           <img src={logo} className="App-logo" alt="logo" />
           <h2>Welcome to React</h2>
         </div>
-        <Game />
+        <TicTacToe />
       </div>
     );
   }
